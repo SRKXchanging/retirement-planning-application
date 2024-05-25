@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetireSavvy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative; /* Added for positioning the back button */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            width: 100%; /* Ensure body takes full width */
+        }
+        section {
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box; /* Ensure padding does not affect width */
+        }
+        .section-1 {
+            color: red;
+            font-size: 25px;
+            text-align: left;
+            margin: 0 auto;
+            padding-left: 50px; /* Added padding for spacing */
+            width: 100%;
+            background-image: url('Images/ban2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover; /* Scale the background image to cover the entire section */
+            background-position: center; /* Position the background image at the center horizontally */
+            background-position-y: 75%; /* Adjust this value to shift the image upward (e.g., 30% means 30% from the top) */
+        }
+        .section-2 p {
+            text-align: center;
+            color: black;
+            font-size: 35px;
+            padding-left: 50px; /* Added padding for spacing */
+        }
+        .section-3 {
+            text-align: center;
+            font-weight: bold;
+        }
+        .section-3 h1{
+            font-size: 50px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            width: 100%; /* Ensure the grid takes full width of the section */
+            margin: 0 auto;
+            box-sizing: border-box; /* Ensure padding does not affect width */
+        }
+        .grid-item {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; /* Ensure padding does not affect width */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between; /* Ensure items are spaced within the container */
+            height: 250px; /* Set a fixed height for each grid item */
+        }
+        .grid-item img {
+            width: 100%;
+            height: 150px; /* Set a fixed height for the images */
+            object-fit: cover; /* Ensure images cover the specified height */
+        }
+        /* Specific styling for the first image to minimize its size */
+        .grid-item img.feature {
+            width: 50%; /* Adjust the width to make it smaller */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .section-4 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+        .product-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 20px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .product-link:hover {
+            background-color: #9f9fa0;
+        }
+    </style>
+</head>
+
+<body>
+<section class="section-1">
+    <p>Savings</p>
+    <h1>RetireSavvy</h1>
+    <small>DBS</small>
+</section>
+
+<section class="section-2">
+    <p>It can be unnerving to rely solely on savings during your retirement. With RetireSavvy, you will receive a guaranteed lump sum retirement payment and/or monthly retirement income once you hit your selected retirement age. This comprises: 100% of your capital and Guaranteed and potential non-guaranteed returns.</p>
+</section>
+
+<section class="section-3">
+    <h1>Benefits:</h1>
+    <div class="grid">
+        <div class="grid-item">
+            <img src="Images/icon4.png" alt="Feature 1" class="feature">
+            <p>Be assured that you will get a steady stream of retirement income.</p>
+        </div>
+        <div class="grid-item"> 
+            <img src="Images/icon5.png" alt="Feature 2" class="feature">
+            <p>You can start small and pay premiums according to your desired premium payment term. Then, let compounding work its wonders.</p>
+        </div>
+        <div class="grid-item">
+            <img src="Images/icon1.png" alt="Feature 3" class="feature">
+            <p>Find peace in protection.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-4">
+    <div class="price">Start investing with as little as S$130 a month.</div>
+    <a href="https://www.dbs.com.sg/personal/promotion/insurance-retiresavvy?cid=sg:en:cbg:dbs:sem:goo:na:txt:retsv:retiresavvy:dbs-l4-insurance-retiresavvy:na&gad_source=1&gclid=Cj0KCQjwmMayBhDuARIsAM9HM8czxQu4SF-LjM7PhX0G0CVJkcXCAktLqJBfXwdZWx9162G61Tg_-GwaAuLmEALw_wcB&gclsrc=aw.ds" class="product-link">For more information, you can click here!</a>
+</section>
+
+</body>
+</html>
