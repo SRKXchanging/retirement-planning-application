@@ -1,129 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WealthHub</title>
     <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-nav {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-}
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
 
-nav .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
 
-nav ul li {
-    margin-left: 20px;
-}
+        nav ul li {
+            margin-left: 20px;
+        }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-}
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
 
-nav ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
 
-.intro {
-    background-image: url('Images/wh1.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    color: white;
-    padding: 260px 0; /* Adjust padding as needed */
-}
+        .intro {
+            background-image: url('Images/wh1.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding: 260px 0;
+            /* Adjust padding as needed */
+        }
 
-.intro-content {
-    max-width: 600px;
-    margin: 0 auto;
-}
+        .intro-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
 
-.intro-content h1 {
-    font-size: 36px;
-}
+        .intro-content h1 {
+            font-size: 36px;
+        }
 
-.intro-content p {
-    font-size: 18px;
-}
+        .intro-content p {
+            font-size: 18px;
+        }
 
-.intro-content button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-}
+        .intro-content button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
 
-.intro-content button:hover {
-    background-color: #555;
-}
+        .intro-content button:hover {
+            background-color: #555;
+        }
 
 
-.options {
-    padding: 20px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
+        .options {
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
 
-.options h1 {
-    margin-top: 10;
-    margin-bottom: 20px;
-}
+        .options h1 {
+            margin-top: 10;
+            margin-bottom: 20px;
+        }
 
-.options-content {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
+        .options-content {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
 
-.option {
-    width: 200px; /* Adjust the width of each option as needed */
-    margin-bottom: 20px; /* Adjust the margin between options */
-}
+        .option {
+            width: 200px;
+            /* Adjust the width of each option as needed */
+            margin-bottom: 20px;
+            /* Adjust the margin between options */
+        }
 
-.option img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
-}
+        .option img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Add a subtle shadow effect */
+        }
 
-.option a {
-    text-decoration: none;
-    color: inherit;
-}
+        .option a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-.option:hover img {
-    transform: scale(1.05); /* Add a slight scale effect on hover */
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
-}
+        .option:hover img {
+            transform: scale(1.05);
+            /* Add a slight scale effect on hover */
+            transition: transform 0.3s ease;
+            /* Add a smooth transition effect */
+        }
 
-/*.mission {
+        /*.mission {
     padding: 20px;
     background-color: #fff;
     text-align: center;
@@ -157,15 +164,15 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }*/
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
 
-/* Fly-in animation */
-/*.fly-in-left, .fly-in-right {
+        /* Fly-in animation */
+        /*.fly-in-left, .fly-in-right {
     opacity: 0;
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
@@ -187,59 +194,59 @@ footer {
     opacity: 1;
     transform: translateX(0);
 }*/
-
-</style>
+    </style>
 </head>
-    <body>
-        <nav>
-            <div class="logo">WealthHub</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#tools">Tools</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-        </nav>
-        
-        <section class="intro" id="home">
-            <div class="intro-content">
-                <h1>Welcome to WealthHub</h1>
-                <p>Your ultimate financial planning resource.</p>
-                <button onclick="scrollToSection('options')">Learn More</button>
-            </div>
-        </section>        
-             
-        <section class="options" id="options">
-            <h1>What are you looking for?</h1>
-            <div class="options-content">
-                <div class="option">
-                    <a href="form.html?option=investment">
-                        <img src="Images/icon1.png" alt="Option 1">
-                        <p>Investment</p>
-                    </a>
-                </div>
-                <div class="option">
-                    <a href="form.html?option=health">
-                        <img src="Images/icon2.png" alt="Option 2">
-                        <p>Health</p>
-                    </a>
-                </div>
-                <div class="option">
-                    <a href="form.html?option=insurance">
-                        <img src="Images/icon3.png" alt="Option 3">
-                        <p>Insurance</p>
-                    </a>
-                </div>
-                <div class="option">
-                    <a href="form.html?option=retirement">
-                        <img src="Images/icon4.png" alt="Option 4">
-                        <p>Retirement</p>
-                    </a>
-                </div>
-            </div>
-        </section>
 
-        <!--<section class="mission" id="mission">
+<body>
+    <nav>
+        <div class="logo">WealthHub</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <section class="intro" id="home">
+        <div class="intro-content">
+            <h1>Welcome to WealthHub</h1>
+            <p>Your ultimate financial planning resource.</p>
+            <button onclick="scrollToSection('options')">Learn More</button>
+        </div>
+    </section>
+
+    <section class="options" id="options">
+        <h1>What are you looking for?</h1>
+        <div class="options-content">
+            <div class="option">
+                <a href="form.html?option=investment">
+                    <img src="Images/icon1.png" alt="Option 1">
+                    <p>Investment</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="form.html?option=health">
+                    <img src="Images/icon2.png" alt="Option 2">
+                    <p>Health</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="form.html?option=insurance">
+                    <img src="Images/icon3.png" alt="Option 3">
+                    <p>Insurance</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="form.html?option=retirement">
+                    <img src="Images/icon4.png" alt="Option 4">
+                    <p>Retirement</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--<section class="mission" id="mission">
             <h2>Our Mission</h2>
             <div class="mission-content">
                 <div class="mission-item fly-in-left">
@@ -268,28 +275,29 @@ footer {
                 <p>Answer to question 3.</p>
             </div>
         </section>-->
-        
-        <footer>
-            <p>&copy; 2024 WealthHub. All rights reserved.</p>
-        </footer>
-        
-        <script>
-            function scrollToSection(id) {
-                const section = document.getElementById(id);
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
 
-            // JavaScript to handle capturing the selected option and redirecting to the second page
-            document.addEventListener('DOMContentLoaded', function () {
-                const optionLinks = document.querySelectorAll('.option a');
+    <footer>
+        <p>&copy; 2024 WealthHub. All rights reserved.</p>
+    </footer>
 
-                optionLinks.forEach(link => {
-                    link.addEventListener('click', function(event) {
-                        const option = link.getAttribute('href').split('=')[1];
-                        localStorage.setItem('selectedOption', option);
-                    });
+    <script>
+        function scrollToSection(id) {
+            const section = document.getElementById(id);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // JavaScript to handle capturing the selected option and redirecting to the second page
+        document.addEventListener('DOMContentLoaded', function () {
+            const optionLinks = document.querySelectorAll('.option a');
+
+            optionLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    const option = link.getAttribute('href').split('=')[1];
+                    localStorage.setItem('selectedOption', option);
                 });
             });
-        </script>
-    </body>
+        });
+    </script>
+</body>
+
 </html>
