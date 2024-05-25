@@ -1,164 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WealthHub</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-        nav {
-            background-color: #333;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 20px;
-        }
+h1{
+    text-align: center;
+}
 
-        nav .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
+nav {
+    background-color: #3F9093;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
+nav .logo{
+    font-size: 50px;
+}
 
-        nav ul li {
-            margin-left: 20px;
-        }
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center-align items vertically */
+    margin: 0;
+    padding: 0;
+    width: 70%; /* Adjust the width as needed */
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
-        }
 
-        nav ul li a:hover {
-            background-color: #555;
-            border-radius: 5px;
-        }
+nav ul li {
+    margin-left: 60px;
+}
 
-        .filter-container {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-            background-color: #f1f1f1;
-            padding: 10px;
-            border-radius: 5px;
-        }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
 
-        .filter-container label {
-            display: flex;
-            align-items: center;
-        }
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
 
-        .section {
-            display: flex;
-            border-bottom: 1px solid #ccc;
-            padding: 20px 0;
-        }
+.filter-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
 
-        .left-column {
-            width: 30%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.filter-container label {
+    display: flex;
+    align-items: center;
+}
 
-        .right-column {
-            width: 70%;
-        }
+.section {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
 
-        .logo {
-            max-width: 100px;
-            max-height: 100px;
-        }
+.left-column {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        button {
-            margin-top: 10px;
-        }
+.right-column {
+    width: 70%;
+}
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.find-out-more-btn {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust margin-top as needed */
+}
+
+.find-out-more-btn:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+</style>
 </head>
-
-<body>
-    <nav>
-        <div class="logo">WealthHub</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#tools">Tools</a></li>
-            <li><a href="#faq">FAQ</a></li>
-        </ul>
-    </nav>
-    <h1>Investment Linked Plans</h1>
-    <div class="filter-container">
-        <label><input type="checkbox" value="all" id="all-checkbox" checked onclick="toggleAll()"> All</label>
-        <label><input type="checkbox" value="category1" onclick="filterSections()"> Plans</label>
-        <label><input type="checkbox" value="category2" onclick="filterSections()"> Plans</label>
-        <label><input type="checkbox" value="category3" onclick="filterSections()"> Plans</label>
-        <label><input type="checkbox" value="category4" onclick="filterSections()"> Plans</label>
-    </div>
-
-    <div class="section category1">
-        <div class="left-column">
-            <img src="Images/com1.png" alt="Logo 1" class="logo">
-        </div>
-        <div class="right-column">
-            <h2>Title 1</h2>
-            <p>Some text for Category 1. <button onclick="alert('More info about Category 1')">Find out more</button>
-            </p>
-        </div>
-    </div>
-
-    <div class="section category2">
-        <div class="left-column">
-            <img src="Images/com2.jpg" alt="Logo 2" class="logo">
-        </div>
-        <div class="right-column">
-            <h2>Title 2</h2>
-            <p>Some text for Category 2. <button onclick="alert('More info about Category 2')">Find out more</button>
-            </p>
-        </div>
-    </div>
-
-    <div class="section category3">
-        <div class="left-column">
-            <img src="Images/com3.jpg" alt="Logo 3" class="logo">
-        </div>
-        <div class="right-column">
-            <h2>Title 3</h2>
-            <p>Some text for Category 3. <button onclick="alert('More info about Category 3')">Find out more</button>
-            </p>
-        </div>
-    </div>
-
-    <div class="section category4">
-        <div class="left-column">
-            <img src="Images/com4.jpeg" alt="Logo 4" class="logo">
-        </div>
-        <div class="right-column">
-            <h2>Title 4</h2>
-            <p>Some text for Category 4. <button onclick="alert('More info about Category 4')">Find out more</button>
-            </p>
-        </div>
-    </div>
-</body>
+    <body>
+        <nav>
+            <div>
+                <img src="Images/logo.png" alt="Company Logo" style="max-width: 200px; max-height: 200px;">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+          <h1>Investment Linked Plans</h1>
+            <div class="filter-container">
+                <label><input type="checkbox" value="all" id="all-checkbox" checked onclick="toggleAll()"> All</label>
+                <label><input type="checkbox" value="category1" onclick="filterSections()"> Bonds</label>
+                <label><input type="checkbox" value="category2" onclick="filterSections()"> Mixed</label>
+                <label><input type="checkbox" value="category3" onclick="filterSections()"> Equities</label>
+            </div>
+        
+            <div class="section category1">
+                <div class="left-column">
+                    <img src="Images/comp3.jpg" alt="Logo 1" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>DBS Invest-Saver</h2>
+                    <p>Ride the market steadily ​with Invest-Saver. Start investing anytime from just S$100 ah month.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment1.html';">Find out more</button>
+                </div>
+            </div>
+        
+            <div class="section category2">
+                <div class="left-column">
+                    <img src="Images/comp1.png" alt="Logo 2" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>Manulife InvestReady (III)</h2>
+                    <p>Diversify your portfolio with access to a diverse range of funds.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment2.html';">Find out more</button>
+                </div>
+            </div>
+        
+            <div class="section category3">
+                <div class="left-column">
+                    <img src="Images/comp5.png" alt="Logo 3" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>AB SICAV I - LOW VOLATILITY EQUITY PORTFOLIO AD SGD-H</h2>
+                    <p>The investment team selects a portfolio of global equities that appear to be of high quality, have low volatility and reasonable valuations, and offer attractive shareholder returns.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment3.html';">Find out more</button>
+                </div>
+            </div>
+            
+            <div class="section category2">
+                <div class="left-column">
+                    <img src="Images/comp5.png" alt="Logo 3" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>ALLIANZ INCOME AND GROWTH AMG2 (H2-SGD)</h2>
+                    <p>The fund adopts a “three-sleeves” approach, with the core holdings invested primarily in a portfolio consisting of 1/3 US high-yield bonds, 1/3 US convertible bonds and 1/3 US equities/equity securities.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment3.html';">Find out more</button>
+                </div>
+            </div>
+    
+            <div class="section category2">
+                <div class="left-column">
+                    <img src="Images/comp1.png" alt="Logo 4" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>Manulink Investor (II)</h2>
+                    <p>Investment-linked plan available for cash, SRS, CPF-OA and CPF-SA subscription. Starts from S$5,000.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment4.html';">Find out more</button>
+                </div>
+            </div>
+        </body>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         // Retrieve the URL parameters
@@ -170,44 +204,43 @@
         document.getElementById('age').textContent = urlParams.get('age');
     });
     function toggleAll() {
-        var allCheckbox = document.getElementById('all-checkbox');
-        var checkboxes = document.querySelectorAll('.filter-container input[type="checkbox"]:not(#all-checkbox)');
+    var allCheckbox = document.getElementById('all-checkbox');
+    var checkboxes = document.querySelectorAll('.filter-container input[type="checkbox"]:not(#all-checkbox)');
 
-        if (allCheckbox.checked) {
-            checkboxes.forEach(function (checkbox) {
-                checkbox.checked = false;
-            });
-        }
-
-        filterSections();
+    if (allCheckbox.checked) {
+        checkboxes.forEach(function(checkbox) {
+            checkbox.checked = false;
+        });
     }
 
-    function filterSections() {
-        var allCheckbox = document.getElementById('all-checkbox');
-        var checkboxes = document.querySelectorAll('.filter-container input[type="checkbox"]:not(#all-checkbox)');
-        var sections = document.querySelectorAll('.section');
-        var selectedCategories = [];
+    filterSections();
+}
 
-        checkboxes.forEach(function (checkbox) {
-            if (checkbox.checked) {
-                selectedCategories.push(checkbox.value);
-            }
-        });
+function filterSections() {
+    var allCheckbox = document.getElementById('all-checkbox');
+    var checkboxes = document.querySelectorAll('.filter-container input[type="checkbox"]:not(#all-checkbox)');
+    var sections = document.querySelectorAll('.section');
+    var selectedCategories = [];
 
-        if (selectedCategories.length === 0) {
-            allCheckbox.checked = true;
+    checkboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+            selectedCategories.push(checkbox.value);
+        }
+    });
+
+    if (selectedCategories.length === 0) {
+        allCheckbox.checked = true;
+    } else {
+        allCheckbox.checked = false;
+    }
+
+    sections.forEach(function(section) {
+        if (allCheckbox.checked || selectedCategories.some(category => section.classList.contains(category))) {
+            section.style.display = 'flex';
         } else {
-            allCheckbox.checked = false;
+            section.style.display = 'none';
         }
-
-        sections.forEach(function (section) {
-            if (allCheckbox.checked || selectedCategories.some(category => section.classList.contains(category))) {
-                section.style.display = 'flex';
-            } else {
-                section.style.display = 'none';
-            }
-        });
-    }
+    });
+}
 </script>
-
 </html>
