@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retirement Planning Calculator</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hello World</h1>
-        <button id="changeMessageButton">Click me</button>
+  <div class="container">
+    <h1>Retirement Planning Calculator</h1>
+    <form id="retirementForm">
+      <label for="age">Current Age:</label>
+      <input type="number" id="age" required>
+
+      <label for="retirementAge">Retirement Age:</label>
+      <input type="number" id="retirementAge" required>
+
+      <label for="currentSavings">Current Savings ($):</label>
+      <input type="number" id="currentSavings" required>
+
+      <label for="annualIncome">Annual Income ($):</label>
+      <input type="number" id="annualIncome" required>
+
+      <label for="savingsRate">Savings Rate (%):</label>
+      <input type="number" id="savingsRate" required>
+
+      <label for="desiredRetirementIncome">Desired Retirement Income ($/year):</label>
+      <input type="number" id="desiredRetirementIncome" required>
+
+      <label for="inflationRate">Inflation Rate (%):</label>
+      <input type="number" id="inflationRate" required>
+
+      <label for="investmentReturnRate">Investment Return Rate (%):</label>
+      <input type="number" id="investmentReturnRate" required>
+
+      <label for="lifeExpectancy">Life Expectancy:</label>
+      <input type="number" id="lifeExpectancy" required>
+
+      <button type="button" onclick="calculateRetirement()">Calculate</button>
+    </form>
+
+    <div id="results">
+      <h2>Results</h2>
+      <p id="annualSavings"></p>
+      <p id="monthlySavings"></p>
     </div>
-    <script src="script.js"></script>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
