@@ -1,6 +1,7 @@
 import retirementProducts from './Retirement.json' assert { type: 'json' };
 import insuranceProducts from './insurance.json' assert { type: 'json' };
 import investmentProducts from './Investment.json' assert { type: 'json' };
+import healthPrograms from './HealthProg.json' assert { type: 'json' };
 
 /** Retirement Products **/
 
@@ -74,6 +75,33 @@ function getInvestmentTypes() {
     return uniq_arr.map(x => x['Filter'])
 }
 
+/** Health Programs **/
+
+function getHealthPrograms() {
+    return healthPrograms['products']
+}
+
+function getHealthProgramById(id) {
+    var result = getHealthPrograms().find(elem => elem['ID'] == id);
+    return result == undefined ? null : result;
+}
+
+function getHealthProgramsByBrand(brand) {
+    var result = getHealthPrograms().filter(elem => elem['Brand'] == brand);
+    return result == undefined ? null : result;
+}
+
+function getHealthProgramsByType(filter) {
+    var result = getHealthPrograms().filter(elem => elem['Filter'] == brand);
+    return result == undefined ? null : result;
+}
+
+function getHealthProgramsTypes() {
+    const uniq_arr = getHealthPrograms().filter((obj, pos, arr) => {
+        return arr.map(data => data['Filter']).indexOf(obj['Filter']) === pos;
+    })
+    return uniq_arr.map(x => x['Filter'])
+}
 
 
 /** Sample Code **/
@@ -83,3 +111,4 @@ console.log(getRetirementProductById('1')) // ID can be provided as a int or str
 console.log(getRetirementProductsByBrand('DBS')[0])
 console.log(getInsuranceTypes())
 console.log(getInvestmentTypes())
+console.log(getHealthProgramsTypes())
