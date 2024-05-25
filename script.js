@@ -5,9 +5,9 @@ function calculateRetirement() {
   const annualIncome = parseFloat(document.getElementById('annualIncome').value);
   const savingsRate = parseFloat(document.getElementById('savingsRate').value);
   const desiredRetirementIncome = parseFloat(document.getElementById('desiredRetirementIncome').value);
-  const inflationRate = parseFloat(document.getElementById('inflationRate').value);
+  const inflationRate = 5;
   const investmentReturnRate = parseFloat(document.getElementById('investmentReturnRate').value);
-  const lifeExpectancy = parseInt(document.getElementById('lifeExpectancy').value);
+  const lifeExpectancy = 99;
 
   const yearsToRetirement = retirementAge - age;
   const yearsInRetirement = lifeExpectancy - retirementAge;
