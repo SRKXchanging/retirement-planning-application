@@ -34,32 +34,32 @@
 
         {
             "ID":4,
-            "name": "Dementia Caregiver product",
+            "name": "ReadyBuilder (II)",
             "Brand":"DBS",
-            "Filter":"Travel",
-            "small_description":"Get the financial support you need to care for your loved ones",
-            "Description":"Did you know that 1 in 10 Singaporeans aged 60 and above have dementia? With increasing life expectancy and growing population, this number is only expected to rise1.\n Caregiving often falls on family members, leading to lifestyle changes, potential unemployment and added stress to provide full-time care.\n That’s why we designed a first of its kind insurance plan in Singapore, so you can focus on providing the best care for the care recipient.",
+            "Filter":"Endowment",
+            "small_description":"A participating whole life plan to support your financial goals amid life’s changes",
+            "Description":"Get covered for death, terminal illness and premium waiver on total & permanent disability. Available in single premium, or in premium paying periods of 5, 10, 15, or 20 years.",
             "Amount":"S$130 monthly"
         },
 
 
         {
             "ID":5,
-            "name": "LifeReady Plus (II)",
-            "Brand":"DBS",
-            "Filter":"Protection",
-            "small_description":"Get yourself covered at every stage of life",
-            "Description":"LifeReady Plus (II) is a whole life insurance plan that provides comprehensive coverage via optional riders. For instance, there is  the option to enhance your coverage up to 5x until age 70 or 80",
+            "name": "GreatHome",
+            "Brand":"OCBC",
+            "Filter":"Home",
+            "small_description":"Insure the assets and contents in your home",
+            "Description":"Get up to S$250,000 for Household Contents and Renovations with first loss coverage (first-loss coverage – if the cost to restore your damaged renovation exceeds the insured amount, we’ll pay up to the sum insured whereas other insurers pay a proportion).",
             "Amount":"S$150 monthly"
         },
 
         {
             "ID":6,
-            "name": "GREAT CRITICAL COVER: TOP 3 CIS",
-            "Brand":"OCBC",
-            "Filter":"Protection",
-            "small_description":"Be protected against the 3 most common critical illnesses",
-            "Description":"Covers all stages of cancer, heart attack and stroke.\n Choose to be protected up to 3 times and receive up to $1,050,000.\n Full payout upon each claim",
+            "name": "myHome Protect II",
+            "Brand":"DBS",
+            "Filter":"Home",
+            "small_description":"Protect your home against the unexpected with up to S$350,000 coverage.",
+            "Description":"Fires and burst pipes in homes are not uncommon. You’re covered whether you’re affected by an accident in your home or your neighbour’s. Receive reimbursement of up to S$32,000 for loss of rent, or incurring costs for staying at an alternative accommodation.",
             "Amount":"S$130 monthly"
         }
 
