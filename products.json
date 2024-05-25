@@ -1,0 +1,28 @@
+{
+    "products" : [
+        {
+            "id": "001",
+            "name": "product #1",
+            "brand": "ABC",
+            "description": "product 1 desc",
+            "details": "product 1 details",
+            "amount": "52.90"
+        },
+        {
+            "id": "002",
+            "name": "product #2",
+            "brand": "ABC",
+            "description": "product 2 desc",
+            "details": "product 2 details",
+            "amount": "79.90"
+        },
+        {
+            "id": "003",
+            "name": "product #3",
+            "brand": "XYZ",
+            "description": "product 3 desc",
+            "details": "product 3 details",
+            "amount": "99.90"
+        }
+    ]
+}
