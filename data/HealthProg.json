@@ -1,0 +1,69 @@
+{
+
+    "products": [
+       
+        {
+            "ID":1,
+            "name": "ReadyMummy",
+            "Brand":"Manulife",
+            "Filter":"Maternity",
+            "small_description":"As you welcome your new child, you know you can focus on the joy of your pregnancy journey with ReadyMummy.",
+            "Description":"Preparing for your child's arrival is an exciting time. ReadyMummy is a 3-year maternity plan1 that provides protection for the expecting mother from as early as 13 weeks into the pregnancy and the child from birth, to policy year 3. This plan is also the first of its kind to cover psychotherapy treatment to provide mental wellness support for the mother. As you welcome your new child, you know you can focus on the joy of your pregnancy journey with ReadyMummy.",
+            "Amount": "S$200 monthly "
+        },
+        
+        {
+            "ID":2,
+            "name": "ReadyProtect",
+            "Brand":"ManuLife",
+            "Filter":"Accident",
+            "small_description":"5 levels of protection for you and your family, from S$21 a week",
+            "Description":"S$50,000 to S$1 million coverage for accidental death and dismemberment. Additional protection with options for income support, medical expenses, waiver on premiums, etc",
+            "Amount":"S$180 monthly"
+        },
+
+
+        {
+            "ID":3,
+            "name": "Dementia Caregiver product",
+            "Brand":"DBS",
+            "Filter":"Critical Illness",
+            "small_description":"Get the financial support you need to care for your loved ones",
+            "Description":"Did you know that 1 in 10 Singaporeans aged 60 and above have dementia? With increasing life expectancy and growing population, this number is only expected to rise1.\n Caregiving often falls on family members, leading to lifestyle changes, potential unemployment and added stress to provide full-time care.\n That’s why we designed a first of its kind insurance plan in Singapore, so you can focus on providing the best care for the care recipient.",
+            "Amount":"S$130 monthly"
+        },
+
+
+        {
+            "ID":4,
+            "name": "LifeReady Plus (II)",
+            "Brand":"DBS",
+            "Filter":"life",
+            "small_description":"Get yourself covered at every stage of life",
+            "Description":"LifeReady Plus (II) is a whole life insurance plan that provides comprehensive coverage via optional riders. For instance, there is  the option to enhance your coverage up to 5x until age 70 or 80",
+            "Amount":"S$150 monthly"
+        },
+
+        {
+            "ID":5,
+            "name": "GREAT CRITICAL COVER: TOP 3 CIS",
+            "Brand":"OCBC",
+            "Filter":"Critical Illness",
+            "small_description":"Be protected against the 3 most common critical illnesses",
+            "Description":"Covers all stages of cancer, heart attack and stroke.\n Choose to be protected up to 3 times and receive up to $1,050,000.\n Full payout upon each claim",
+            "Amount":"S$130 monthly"
+        },
+
+        {
+            "ID":6,
+            "name": "Manulife CI FlexiCare",
+            "Brand":"Manulife",
+            "Filter":"Critical Illness",
+            "small_description":"Covers you up to 126 critical illnesses (CI) including early, intermediate and advanced stages.",
+            "Description":"Giving you flexibility in how you protect your health is our top priority. With Manulife CI FlexiCare, you can choose a coverage that best suits your needs. Covering you for 126 critical illnesses (CI) including early, intermediate and advanced stages, this plan also has the ability to restart your coverage, if you add on the CoverMeAgain Booster Rider. Be in control to stay protected.",
+            "Amount":"S$130 monthly"
+        }
+
+
+    ]
+}

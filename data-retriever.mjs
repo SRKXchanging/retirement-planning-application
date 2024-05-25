@@ -1,46 +1,46 @@
-import retirementProducts from './Retirement.json' assert { type: 'json' };
-import insuranceProducts from './insurance.json' assert { type: 'json' };
-import investmentProducts from './Investment.json' assert { type: 'json' };
-import healthPrograms from './HealthProg.json' assert { type: 'json' };
+import retirementProducts from './data/Retirement.json' assert { type: 'json' };
+import insuranceProducts from './data/insurance.json' assert { type: 'json' };
+import investmentProducts from './data/Investment.json' assert { type: 'json' };
+import healthPrograms from './data/HealthProg.json' assert { type: 'json' };
 
 /** Retirement Products **/
 
-function getRetirementProducts() {
+export function getRetirementProducts() {
     return retirementProducts['products']
 }
 
-function getRetirementProductById(id) {
+export function getRetirementProductById(id) {
     var result = getRetirementProducts().find(elem => elem['ID'] == id);
     return result == undefined ? null : result;
 }
 
-function getRetirementProductsByBrand(brand) {
+export function getRetirementProductsByBrand(brand) {
     var result = getRetirementProducts().filter(elem => elem['Brand'] == brand);
     return result == undefined ? null : result;
 }
 
 /** Insurance Products **/
 
-function getInsuranceProducts() {
+export function getInsuranceProducts() {
     return insuranceProducts['products']
 }
 
-function getInsuranceProductById(id) {
+export function getInsuranceProductById(id) {
     var result = getInsuranceProducts().find(elem => elem['ID'] == id);
     return result == undefined ? null : result;
 }
 
-function getInsuranceProductsByBrand(brand) {
+export function getInsuranceProductsByBrand(brand) {
     var result = getInsuranceProducts().filter(elem => elem['Brand'] == brand);
     return result == undefined ? null : result;
 }
 
-function getInsuranceProductsByType(filter) {
+export function getInsuranceProductsByType(filter) {
     var result = getInsuranceProducts().filter(elem => elem['Filter'] == brand);
     return result == undefined ? null : result;
 }
 
-function getInsuranceTypes() {
+export function getInsuranceTypes() {
     const uniq_arr = getInsuranceProducts().filter((obj, pos, arr) => {
         return arr.map(data => data['Filter']).indexOf(obj['Filter']) === pos;
     })
@@ -49,26 +49,26 @@ function getInsuranceTypes() {
 
 /** Investment Products **/
 
-function getInvestmentProducts() {
+export function getInvestmentProducts() {
     return investmentProducts['products']
 }
 
-function getInvestmentProductById(id) {
+export function getInvestmentProductById(id) {
     var result = getInvestmentProducts().find(elem => elem['ID'] == id);
     return result == undefined ? null : result;
 }
 
-function getInvestmentProductsByBrand(brand) {
+export function getInvestmentProductsByBrand(brand) {
     var result = getInvestmentProducts().filter(elem => elem['Brand'] == brand);
     return result == undefined ? null : result;
 }
 
-function getInvestmentProductsByType(filter) {
+export function getInvestmentProductsByType(filter) {
     var result = getInvestmentProducts().filter(elem => elem['Filter'] == brand);
     return result == undefined ? null : result;
 }
 
-function getInvestmentTypes() {
+export function getInvestmentTypes() {
     const uniq_arr = getInvestmentProducts().filter((obj, pos, arr) => {
         return arr.map(data => data['Filter']).indexOf(obj['Filter']) === pos;
     })
@@ -77,26 +77,26 @@ function getInvestmentTypes() {
 
 /** Health Programs **/
 
-function getHealthPrograms() {
+export function getHealthPrograms() {
     return healthPrograms['products']
 }
 
-function getHealthProgramById(id) {
+export function getHealthProgramById(id) {
     var result = getHealthPrograms().find(elem => elem['ID'] == id);
     return result == undefined ? null : result;
 }
 
-function getHealthProgramsByBrand(brand) {
+export function getHealthProgramsByBrand(brand) {
     var result = getHealthPrograms().filter(elem => elem['Brand'] == brand);
     return result == undefined ? null : result;
 }
 
-function getHealthProgramsByType(filter) {
+export function getHealthProgramsByType(filter) {
     var result = getHealthPrograms().filter(elem => elem['Filter'] == brand);
     return result == undefined ? null : result;
 }
 
-function getHealthProgramsTypes() {
+export function getHealthProgramsTypes() {
     const uniq_arr = getHealthPrograms().filter((obj, pos, arr) => {
         return arr.map(data => data['Filter']).indexOf(obj['Filter']) === pos;
     })
@@ -105,10 +105,11 @@ function getHealthProgramsTypes() {
 
 
 /** Sample Code **/
+// console.log(getRetirementProductById(1))
+// console.log(getRetirementProductById('1')) // ID can be provided as a int or string
+// console.log(getRetirementProductsByBrand('DBS')[0])
+// console.log(getInsuranceTypes())
+// console.log(getInvestmentTypes())
+// console.log(getHealthProgramsTypes())
 
-console.log(getRetirementProductById(1))
-console.log(getRetirementProductById('1')) // ID can be provided as a int or string
-console.log(getRetirementProductsByBrand('DBS')[0])
-console.log(getInsuranceTypes())
-console.log(getInvestmentTypes())
-console.log(getHealthProgramsTypes())
+console.log('trigger2')
