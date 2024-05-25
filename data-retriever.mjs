@@ -12,7 +12,7 @@ function getRetirementProductById(id) {
     return result == undefined ? null : result;
 }
 
-function getProductsByBrand(brand) {
+function getRetirementProductsByBrand(brand) {
     var result = getRetirementProducts().filter(elem => elem['Brand'] == brand);
     return result == undefined ? null : result;
 }
@@ -38,10 +38,16 @@ function getInsuranceProductsByType(filter) {
     return result == undefined ? null : result;
 }
 
+function getInsuranceTypes() {
+    const uniq_arr = getInsuranceProducts().filter((obj, pos, arr) => {
+        return arr.map(data => data['Filter']).indexOf(obj['Filter']) === pos;
+    })
+    return uniq_arr.map(x => x['Filter'])
+}
+
 /** Sample Code **/
 
-// ID can be provided as a int or string
 console.log(getRetirementProductById(1))
-console.log(getRetirementProductById('1'))
-
-console.log(getProductsByBrand('DBS')[0])
+console.log(getRetirementProductById('1')) // ID can be provided as a int or string
+console.log(getRetirementProductsByBrand('DBS')[0])
+console.log(getInsuranceTypes())
