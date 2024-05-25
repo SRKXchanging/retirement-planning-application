@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest Saver</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow-x: hidden;
+            width: 100%;
+        }
+        section {
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .section-1 {
+            color: red;
+            font-size: 25px;
+            text-align: left;
+            margin: 0 auto;
+            padding-left: 50px;
+            width: 100%;
+            background-image: url('Images/ban2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-position-y: 75%;
+        }
+        .section-2 p {
+            text-align: center;
+            color: black;
+            font-size: 35px;
+            padding-left: 50px;
+        }
+        .section-3 {
+            text-align: center;
+            font-weight: bold;
+        }
+        .section-3 h1{
+            font-size: 50px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .grid-item {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 250px;
+        }
+        .grid-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .grid-item img.feature {
+            width: 50%;
+            height: auto;
+        }
+        .section-4 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+        .product-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 20px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .product-link:hover {
+            background-color: #9f9fa0;
+        }
+        /* Adjust grid layout to center the last item */
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto auto;
+                grid-template-areas: 
+                    "item1 item2 item3"
+                    ". item4 .";
+            }
+            .grid-item:nth-child(4) {
+                grid-area: item4;
+            }
+        }
+        @media (max-width: 767px) {
+            .grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                    "item1"
+                    "item2"
+                    "item3"
+                    "item4";
+            }
+            .grid-item:nth-child(4) {
+                grid-area: item4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<section class="section-1">
+    <p>Travel Plan</p>
+    <h1>TravellerShield Plus</h1>
+    <small>DBS</small>
+</section>
+
+<section class="section-2">
+    <p>Comprehensive COVID-19 coverage. TravellerShield Plus customers (including your little ones who are unvaccinated) will automatically be covered for COVID-19.</p>
+</section>
+
+<section class="section-3">
+    <h1>Benefits:</h1>
+    <div class="grid">
+        <div class="grid-item">
+            <img src="icon15.png" alt="Feature 1" class="feature">
+            <p>Comprehensive Covid-19 coverage.</p>
+        </div>
+        <div class="grid-item">
+            <img src="icon12.png" alt="Feature 2" class="feature">
+            <p>Medical expenses overseas are covered.</p>
+        </div>
+        <div class="grid-item">
+            <img src="icon14.png" alt="Feature 3" class="feature">
+            <p>Get optional coverage for conditions such as asthma, diabetes, heart conditions and more with this add-on benefit.</p>
+        </div>
+        <div class="grid-item">
+            <img src="icon16.png" alt="Feature 4" class="feature">
+            <p>Medical expenses on cruises also covered.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-4">
+    <div class="price">Start investing with as little as S$200 a month.</div>
+    <a href="https://www.dbs.com.sg/personal/insurance/travel/travellershield-plus" class="product-link">For more information, you can click here!</a>
+</section>
+
+</body>
+</html>
