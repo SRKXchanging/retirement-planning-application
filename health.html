@@ -11,28 +11,35 @@ body {
     padding: 0;
 }
 
+h1{
+    text-align: center;
+}
+
 nav {
-    background-color: #333;
+    background-color: #3F9093;
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
 }
 
-nav .logo {
-    font-size: 24px;
-    font-weight: bold;
+nav .logo{
+    font-size: 50px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center-align items vertically */
     margin: 0;
     padding: 0;
+    width: 70%; /* Adjust the width as needed */
 }
 
+
 nav ul li {
-    margin-left: 20px;
+    margin-left: 60px;
 }
 
 nav ul li a {
@@ -82,9 +89,24 @@ nav ul li a:hover {
     max-height: 100px;
 }
 
-button {
-    margin-top: 10px;
+.find-out-more-btn {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust margin-top as needed */
 }
+
+.find-out-more-btn:hover {
+    background-color: #0056b3;
+}
+
 
 footer {
     background-color: #333;
@@ -98,60 +120,87 @@ footer {
 </head>
     <body>
         <nav>
-            <div class="logo">WealthHub</div>
+            <div>
+                <img src="Images/logo.png" alt="Company Logo" style="max-width: 200px; max-height: 200px;">
+            </div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#tools">Tools</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="resources.html">Resources</a></li>
             </ul>
         </nav>
-          <h1>Health Plans</h1>
+          <h1>Health Prohgrammes</h1>
             <div class="filter-container">
                 <label><input type="checkbox" value="all" id="all-checkbox" checked onclick="toggleAll()"> All</label>
-                <label><input type="checkbox" value="category1" onclick="filterSections()"> All Health Plans</label>
-                <label><input type="checkbox" value="category2" onclick="filterSections()"> Accident Plans</label>
-                <label><input type="checkbox" value="category3" onclick="filterSections()"> Critical Illness Plans</label>
-                <label><input type="checkbox" value="category4" onclick="filterSections()"> Maternity Plans</label>
-            </div>
-        
-            <div class="section category1">
-                <div class="left-column">
-                    <img src="Images/com1.png" alt="Logo 1" class="logo">
-                </div>
-                <div class="right-column">
-                    <h2>Title 1</h2>
-                    <p>Some text for Category 1. <button onclick="alert('More info about Category 1')">Find out more</button></p>
-                </div>
+                <label><input type="checkbox" value="category1" onclick="filterSections()"> Accident</label>
+                <label><input type="checkbox" value="category2" onclick="filterSections()"> Critical Illness</label>
+                <label><input type="checkbox" value="category3" onclick="filterSections()"> Maternity</label>
             </div>
         
             <div class="section category2">
                 <div class="left-column">
-                    <img src="Images/com2.jpg" alt="Logo 2" class="logo">
+                    <img src="Images/comp3.jpg" alt="Logo 1" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>Title 2</h2>
-                    <p>Some text for Category 2. <button onclick="alert('More info about Category 2')">Find out more</button></p>
+                    <h2>Dementia Caregiver protect</h2>
+                    <p>Get the financial support you need to care for your loved ones.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullhealth1.html';">Find out more</button>
                 </div>
             </div>
         
             <div class="section category3">
                 <div class="left-column">
-                    <img src="Images/com3.jpg" alt="Logo 3" class="logo">
+                    <img src="Images/comp1.png" alt="Logo 2" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>Title 3</h2>
-                    <p>Some text for Category 3. <button onclick="alert('More info about Category 3')">Find out more</button></p>
+                    <h2>ReadyMummy</h2>
+                    <p>As you welcome your new child, you know you can focus on the joy of your pregnancy journey with ReadyMummy.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullhealth2.html';">Find out more</button>
+                </div>
+            </div>
+        
+            <div class="section category1">
+                <div class="left-column">
+                    <img src="Images/comp1.png" alt="Logo 1" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>ReadyProtect</h2>
+                    <p>5 levels of protection for you and your family, from S$21 a week.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment3.html';">Find out more</button>
+                </div>
+            </div>
+            
+            <div class="section category1">
+                <div class="left-column">
+                    <img src="Images/comp3.jpg" alt="Logo 1" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>LifeReady Plus (II)</h2>
+                    <p>Get yourself covered at every stage of life.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment3.html';">Find out more</button>
                 </div>
             </div>
     
-            <div class="section category4">
+            <div class="section category2">
                 <div class="left-column">
-                    <img src="Images/com4.jpeg" alt="Logo 4" class="logo">
+                    <img src="Images/comp5.png" alt="Logo 1" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>Title 4</h2>
-                    <p>Some text for Category 4. <button onclick="alert('More info about Category 4')">Find out more</button></p>
+                    <h2>GREAT CRITICAL COVER: TOP 3 CIS</h2>
+                    <p>Be protected against the 3 most common critical illnesses.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment4.html';">Find out more</button>
+                </div>
+            </div>
+
+            <div class="section category2">
+                <div class="left-column">
+                    <img src="Images/comp1.png" alt="Logo 1" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>Manulife CI FlexiCare</h2>
+                    <p>Covers you up to 126 critical illnesses (CI) including early, intermediate and advanced stages.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment4.html';">Find out more</button>
                 </div>
             </div>
         </body>
