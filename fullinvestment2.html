@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manulife InvestReady</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative; /* Added for positioning the back button */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            width: 100%; /* Ensure body takes full width */
+        }
+        section {
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box; /* Ensure padding does not affect width */
+        }
+        .section-1 {
+            color: red;
+            font-size: 25px;
+            text-align: left;
+            margin: 0 auto;
+            padding-left: 50px; /* Added padding for spacing */
+            width: 100%;
+            background-image: url('Images/ban2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover; /* Scale the background image to cover the entire section */
+            background-position: center; /* Position the background image at the center horizontally */
+            background-position-y: 75%; /* Adjust this value to shift the image upward (e.g., 30% means 30% from the top) */
+        }
+        .section-2 p {
+            text-align: center;
+            color: black;
+            font-size: 35px;
+            padding-left: 50px; /* Added padding for spacing */
+        }
+        .section-3 {
+            text-align: center;
+            font-weight: bold;
+        }
+        .section-3 h1{
+            font-size: 50px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            width: 100%; 
+            margin: 0 auto;
+            box-sizing: border-box; 
+        }
+        .grid-item {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between; 
+            height: 270px; 
+        }
+        .grid-item img {
+            width: 100%;
+            height: 150px; 
+            object-fit: cover; 
+        }
+        
+        .grid-item img.feature {
+            width: 50%; 
+            height: auto; 
+        }
+        .section-4 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+        .product-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 20px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .product-link:hover {
+            background-color: #9f9fa0;
+        }
+    </style>
+</head>
+
+<body>
+<section class="section-1">
+    <p>Mixed Plan</p>
+    <h1>Manulife InvestReady</h1>
+    <small>Manulife</small>
+</section>
+
+<section class="section-2">
+    <p>Diversify your portfolio with a single plan. Manulife InvestReady (III) is a whole-life regular premium investment-linked plan that offers both protection and investment benefits. Get access to a diverse range of funds including dividend-paying funds for a stream of potential income. Additionally, we help your investment work harder with welcome bonus, annual premium bonus, and yearly loyalty bonus.</p>
+</section>
+
+<section class="section-3">
+    <h1>Benefits:</h1>
+    <div class="grid">
+        <div class="grid-item">
+            <img src="Images/icon5.png" alt="Feature 1" class="feature">
+            <p>Make you investment work harder.</p>
+        </div>
+        <div class="grid-item">
+            <img src="Images/icon22.png" alt="Feature 2" class="feature">
+            <p>Welcome Bonus.</p>
+        </div>
+        <div class="grid-item">
+            <img src="Images/icon20.png" alt="Feature 3" class="feature">
+            <p>Flexibility.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-4">
+    <div class="price">Get access to a diverse range of funds.</div>
+    <a href="https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/investready.html" class="product-link">For more information, you can click here!</a>
+</section>
+
+</body>
+</html>
