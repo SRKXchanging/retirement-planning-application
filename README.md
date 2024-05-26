@@ -6,6 +6,16 @@ Our website: [https://main.dwh8a5qqcdnaz.amplifyapp.com/](https://main.dwh8a5qqc
 
 Demo Video: [https://youtu.be/s5CbBBdIsz0](https://youtu.be/s5CbBBdIsz0)
 
+## Project Description
+
+Our project aims to enhance financial literacy in Singapore, particularly among the elderly. We have developed an intuitive website that offers personalized financial plans and educational resources on the importance of financial literacy. Users can easily access information to improve their financial understanding and make informed decisions, empowering them to achieve greater financial stability and independence. Key features include tailored financial plans, easy-to-read articles, and interactive tools designed to simplify complex financial concepts.
+
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+- AWS (Dynamo DB, Lambda, API Gateway)
+
 ## Testing Instructions:
 
 1. Click on 'Learn More' on the main page
