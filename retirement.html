@@ -5,46 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WealthHub</title>
     <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+        h1{
+    text-align: center;
 }
+        @font-face {
+            font-family: 'Plantin-Font';
+            src: url('PlantinMTPro-Regular.otf') format('opentype');
+        }
 
-nav {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-}
+        @font-face {
+            font-family: 'Proxima Nova-Font';
+            src: url("ProximaNova-Regular.otf") format('opentype');
+        }
 
-nav .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
+        body {
+            font-family: 'Plantin-Font', 'ProximaNova', serif;
+            margin: 0;
+            padding: 0;
+        }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
+        nav {
+            background-color: #3F9093;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
 
-nav ul li {
-    margin-left: 20px;
-}
+        nav .logo {
+            font-size: 50px;
+        }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            width: 70%;
+        }
 
-nav ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
+        nav ul li {
+            margin-left: 60px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            font-size: 20px;
+        }
+
+        nav ul li a:hover {
+            border-radius: 5px;
+        }
+
+.intro-content h1 {
+            font-size: 46px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
 
 .filter-container {
     display: flex;
@@ -87,74 +107,90 @@ button {
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
 
 
 </style>
 </head>
     <body>
         <nav>
-            <div class="logo">WealthHub</div>
+            <div>
+                <img src="Images/logo.png" alt="Company Logo" style="max-width: 200px; max-height: 200px;">
+            </div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#tools">Tools</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="resources.html">Resources</a></li>
             </ul>
         </nav>
           <h1>Retirement Plans</h1>
             <div class="filter-container">
                 <label><input type="checkbox" value="all" id="all-checkbox" checked onclick="toggleAll()"> All</label>
-                <label><input type="checkbox" value="category1" onclick="filterSections()"> Plans</label>
-                <label><input type="checkbox" value="category2" onclick="filterSections()"> Plans</label>
-                <label><input type="checkbox" value="category3" onclick="filterSections()"> Plans</label>
-                <label><input type="checkbox" value="category4" onclick="filterSections()"> Plans</label>
             </div>
         
             <div class="section category1">
                 <div class="left-column">
-                    <img src="Images/comp1.png" alt="Logo 1" class="logo">
+                    <img src="Images/comp3.jpg" alt="Logo 1" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>Title 1</h2>
-                    <p>Some text for Category 1. <button onclick="alert('More info about Category 1')">Find out more</button></p>
+                    <h2>RetireSavvy</h2>
+                    <p>Get up to 20% off 1st year premium. Pay with SRS for extra vouchers</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement1.html';">Find out more</button>
                 </div>
             </div>
         
             <div class="section category2">
                 <div class="left-column">
-                    <img src="Images/comp2.jpg" alt="Logo 2" class="logo">
+                    <img src="Images/comp1.png" alt="Logo 2" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>Title 2</h2>
-                    <p>Some text for Category 2. <button onclick="alert('More info about Category 2')">Find out more</button></p>
+                    <h2>RetireReady Plus (III)</h2>
+                    <p>Start saving today and enjoy up to 10% first year premium discount.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
                 </div>
             </div>
         
             <div class="section category3">
                 <div class="left-column">
-                    <img src="Images/comp3.jpg" alt="Logo 3" class="logo">
+                    <img src="Images/comp2.jpg" alt="Logo 3" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>Title 3</h2>
-                    <p>Some text for Category 3. <button onclick="alert('More info about Category 3')">Find out more</button></p>
+                    <h2>Gro Retire Flex Pro</h2>
+                    <p>Retire when you want with a stready stream of cash payouts</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
                 </div>
             </div>
     
             <div class="section category4">
                 <div class="left-column">
-                    <img src="Images/comp4.jpeg" alt="Logo 4" class="logo">
+                    <img src="Images/comp7.png" alt="Logo 4" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>Title 4</h2>
-                    <p>Some text for Category 4. <button onclick="alert('More info about Category 4')">Find out more</button></p>
+                    <h2>PRUActive Retirement II</h2>
+                    <p>A highly customisable retirement insurance plan to suit your changing needs, PRUActive Retirement II lets you take charge of your retirement years today.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
+                </div>
+            </div>
+
+            <div class="section category4">
+                <div class="left-column">
+                    <img src="Images/comp6.png" alt="Logo 4" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>GREAT Retire Income | Monthly Income Stream</h2>
+                    <p>Safeguard your financial freedom, not just your retirement.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
                 </div>
             </div>
         </body>
+        <footer>
+            <p>&copy; 2024 WealthHub. All rights reserved.</p>
+    </footer>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         // Retrieve the URL parameters
