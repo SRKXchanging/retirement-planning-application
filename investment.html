@@ -23,20 +23,19 @@ nav {
     padding: 10px 20px;
 }
 
-nav .logo{
+nav .logo {
     font-size: 50px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    align-items: center; /* Center-align items vertically */
+    justify-content: flex-end;
+    align-items: center;
     margin: 0;
     padding: 0;
-    width: 70%; /* Adjust the width as needed */
-}
-
+    width: 70%;
+ }
 
 nav ul li {
     margin-left: 60px;
@@ -46,10 +45,10 @@ nav ul li a {
     color: white;
     text-decoration: none;
     padding: 5px 10px;
+    font-size: 20px;
 }
 
 nav ul li a:hover {
-    background-color: #555;
     border-radius: 5px;
 }
 
@@ -100,7 +99,7 @@ nav ul li a:hover {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    margin-top: 10px; /* Adjust margin-top as needed */
+    margin-top: 10px; 
 }
 
 .find-out-more-btn:hover {
@@ -124,10 +123,10 @@ footer {
                 <img src="Images/logo.png" alt="Company Logo" style="max-width: 200px; max-height: 200px;">
             </div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#tools">Tools</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="resources.html">Resources</a></li>
             </ul>
         </nav>
           <h1>Investment Linked Plans</h1>
@@ -193,12 +192,15 @@ footer {
                 </div>
             </div>
         </body>
+
+        <footer>
+            <p>&copy; 2024 WealthHub. All rights reserved.</p>
+        </footer>
+
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        // Retrieve the URL parameters
         const urlParams = new URLSearchParams(window.location.search);
 
-        // Populate the data on the page
         document.getElementById('name').textContent = urlParams.get('name');
         document.getElementById('email').textContent = urlParams.get('email');
         document.getElementById('age').textContent = urlParams.get('age');

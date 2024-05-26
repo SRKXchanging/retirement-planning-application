@@ -11,6 +11,44 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
+        nav {
+            background-color: #3F9093;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        nav .logo {
+            font-size: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            width: 70%;
+        }
+
+        nav ul li {
+            margin-left: 60px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            font-size: 20px;
+        }
+
+        nav ul li a:hover {
+            border-radius: 5px;
+        }
+
         .container {
             max-width: 600px;
             margin: 50px auto;
@@ -29,7 +67,7 @@
         }
         input[type="submit"] {
             width: 100%;
-            background-color: #4CAF50;
+            background-color: #3F9093;
             color: white;
             padding: 14px 20px;
             margin: 8px 0;
@@ -39,12 +77,24 @@
             font-size: 16px;
         }
         input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #95d0d2;
         }
     </style>
 </head>
 <body>
 
+    <nav>
+        <div>
+            <img src="Images/logo.png" alt="Company Logo" style="max-width: 200px; max-height: 200px;">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+    
 <div class="container">
     <h2>User Information</h2>
     <p>Please key in your information below.</p>

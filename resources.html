@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +10,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 18px; /* Increase the base font size */
-    line-height: 1.6; /* Increase the line-height for better readability */
+    font-size: 18px; 
+    line-height: 1.6; 
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -20,44 +19,53 @@ body {
 }
 
 nav {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px; /* Increase padding for better touch targets */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+            background-color: #3F9093;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        nav .logo {
+            font-size: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            width: 70%;
+        }
+
+        nav ul li {
+            margin-left: 60px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            border-radius: 5px;
+        }
+
+ol {
+        margin-top: 20px; 
 }
 
-nav .logo {
-    font-size: 28px; /* Increase logo font size */
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-left: 30px; /* Increase spacing between nav items */
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px; /* Increase padding for better touch targets */
-    transition: background-color 0.3s, color 0.3s;
-    font-size: 20px; /* Increase font size for nav links */
+ol li {
+        margin-bottom: 20px; 
 }
 
 .content {
-    max-width: 900px; /* Increase content width for better readability */
-    margin: 30px auto; /* Increase margin for better spacing */
-    padding: 30px; /* Increase padding for better spacing */
+    max-width: 900px; 
+    margin: 30px auto; 
+    padding: 30px; 
     background-color: white;
     border: 2px solid #ccc;
     border-radius: 10px;
@@ -67,41 +75,43 @@ nav ul li a {
 h1 {
     text-align: center;
     color: #333;
-    font-size: 36px; /* Increase font size for headings */
+    font-size: 36px; 
 }
 
 h2 {
     text-align: center;
     color: #666;
-    font-size: 28px; /* Increase font size for subheadings */
+    font-size: 28px; 
 }
 
 p {
-    margin-bottom: 20px; /* Increase margin between paragraphs */
+    margin-bottom: 20px; 
     text-align: justify;
-    line-height: 1.8; /* Increase line-height for better readability */
+    line-height: 1.8; 
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0; /* Increase padding for better spacing */
+    padding: 20px 0; 
     position: fixed;
     width: 100%;
     bottom: 0;
-    font-size: 16px; /* Increase font size for footer */
+    font-size: 16px; 
 }
 
 </style>
 
 <nav>
-    <div class="logo" aria-label="WealthHub">WealthHub</div>
+    <div>
+        <img src="Images/logo.png" alt="Company Logo" style="max-width: 200px; max-height: 200px;">
+    </div>
     <ul>
-        <li><a href="#home" aria-label="Home">Home</a></li>
-        <li><a href="#about" aria-label="About Us">About Us</a></li>
-        <li><a href="#tools" aria-label="Tools">Tools</a></li>
-        <li><a href="#resources" aria-label="Resources">Resources</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="resources.html">Resources</a></li>
     </ul>
 </nav>
 
@@ -149,10 +159,25 @@ footer {
 
 
                 <p>In summary, financial literacy is a fundamental skill that empowers individuals to make informed financial decisions, manage their resources wisely, and contribute to the economic well-being of society. It plays a critical role in enhancing personal financial stability, reducing stress, and fostering economic growth and social equality.</p>
+                <br>
+                <h2> Our Reading Resource Reccomendations:</h2>
+                    <ol>
+                        <li>
+                            <strong>"The Total Money Makeover" by Dave Ramsey</strong>: This book provides practical advice on budgeting, saving, getting out of debt, and building wealth. It's a great resource for individuals looking to improve their financial literacy and manage their money more effectively.
+                        </li>
+                        <li>
+                            <strong>"Rich Dad Poor Dad" by Robert T. Kiyosaki</strong>: In this book, Kiyosaki shares his personal story and insights on money management, investing, and building wealth. It offers valuable lessons on financial literacy and encourages readers to adopt a mindset of financial independence and entrepreneurship.
+                        </li>
+                        <li>
+                            <strong>"I Will Teach You to Be Rich" by Ramit Sethi</strong>: Sethi's book offers a step-by-step guide to mastering personal finance and achieving financial success. It covers topics such as saving, investing, banking, and automating finances, providing practical tips and strategies for improving financial literacy and building wealth.
+                        </li>
+                    </ol>
+                <br>
             </div>
         </div>
     </div>
 
+        
 
     <footer>
         &copy; 2024 WealthHub. All rights reserved.
@@ -161,11 +186,8 @@ footer {
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Retrieve the URL parameters
             const urlParams = new URLSearchParams(window.location.search);
 
-
-            // Populate the data on the page
             document.getElementById('name').textContent = urlParams.get('name');
             document.getElementById('email').textContent = urlParams.get('email');
             document.getElementById('age').textContent = urlParams.get('age');
