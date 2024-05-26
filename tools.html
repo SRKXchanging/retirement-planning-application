@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WealthHub - Financial Tools</title>
+</head>
+<style>
+        @font-face {
+            font-family: 'Plantin-Font';
+            src: url('PlantinMTPro-Regular.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Proxima Nova-Font';
+            src: url("ProximaNova-Regular.otf") format('opentype');
+        }
+
+        body {
+            font-family: 'Plantin-Font', 'ProximaNova', serif;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: #3F9093;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        nav .logo {
+            font-size: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            width: 70%;
+        }
+
+        nav ul li {
+            margin-left: 60px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            border-radius: 5px;
+        }
+
+        button {
+        font-size: 18px; 
+         }
+
+        #riskAssessmentTool select option {
+        font-size: 18px; 
+        }
+
+        .container {
+            padding: 0 20px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+
+        
+        header, main, footer {
+            padding-top: 20px; 
+            padding-bottom: 20px; 
+        }
+
+        
+        section {
+            margin-bottom: 20px; 
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+</style>
+</head>
+
+<nav>
+    <div>
+        <img src="Images/logo.png" alt="Company Logo" style="max-width: 200px; max-height: 200px;">
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="resources.html">Resources</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <body>
+        <header>
+            <h1>Explore Our Financial Planning Tools</h1>
+            <p>Beyond our array of services, we provide a suite of tools designed to assist users in their financial planning endeavors.</p>
+        </header>
+
+        <main>
+            <section id="financialCalculator">
+                <h2>1) Compound Interest Calculator</h2>
+                    <label for="principal">Principal Amount:</label>
+                    <input type="number" id="principal">
+                    <label for="rate">Annual Interest Rate (%):</label>
+                    <input type="number" id="rate">
+                    <label for="years">Number of Years:</label>
+                    <input type="number" id="years">
+                    <button onclick="calculateCompoundInterest()">Calculate</button>
+                    <p id="result"></p>
+
+                    <script>
+                        function calculateCompoundInterest() {
+                            const principal = parseFloat(document.getElementById("principal").value);
+                            const rate = parseFloat(document.getElementById("rate").value);
+                            const years = parseFloat(document.getElementById("years").value);
+                            const compoundInterest = principal * Math.pow(1 + rate / 100, years) - principal;
+                            document.getElementById("result").innerHTML = "Compound Interest: $" + compoundInterest.toFixed(2);
+                        }
+                    </script>
+            </section>
+
+            <section id="budgetingTool">
+                <h2>2) Expense Tracker</h2>
+                    <label for="expense">Enter Expense:</label>
+                    <input type="text" id="expense">
+                    <button onclick="addExpense()">Add Expense</button>
+                    <ul id="expenseList"></ul>
+                    <p id="totalExpense">Total Expense: $0</p>
+
+                    <script>
+                        let totalExpense = 0;
+
+                        function addExpense() {
+                            const expense = document.getElementById("expense").value;
+                            totalExpense += parseFloat(expense);
+                            document.getElementById("expenseList").innerHTML += "<li>" + expense + "</li>";
+                            document.getElementById("totalExpense").innerHTML = "Total Expense: $" + totalExpense.toFixed(2);
+                            document.getElementById("expense").value = "";
+                        }
+                    </script>
+            </section>
+
+            <section id="riskAssessmentTool">
+                <h2>3) Risk Tolerance Questionnaire</h2>
+                <p>Answer the following questions to assess your risk tolerance:</p>
+                
+                <div>
+                    <label for="question1">Question 1: Do you have any experience with investing?</label>
+                    <select id="question1">
+                        <option value="low">None</option>
+                        <option value="medium">Some</option>
+                        <option value="high">A lot</option>
+                    </select>
+                </div>
+            
+                <div>
+                    <label for="question2">Question 2: What is your investment time horizon?</label>
+                    <select id="question2">
+                        <option value="short">Short-term (less than 5 years)</option>
+                        <option value="medium">Medium-term (5 to 10 years)</option>
+                        <option value="long">Long-term (more than 10 years)</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="question3">Question 3: How would you react to a significant decline in the value of your investments?</label>
+                    <select id="question3">
+                        <option value="sell">Sell all or most of my investments</option>
+                        <option value="hold">Hold onto my investments and wait for the market to recover</option>
+                        <option value="buy">Increase my investments while prices are low</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="question4">Question 4: How important is the potential for high returns in your investment strategy?</label>
+                    <select id="question4">
+                        <option value="low">Not important</option>
+                        <option value="medium">Somewhat important</option>
+                        <option value="high">Very important</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="question5">Question 5: How would you rate your overall financial knowledge?</label>
+                    <select id="question5">
+                        <option value="low">Limited</option>
+                        <option value="medium">Moderate</option>
+                        <option value="high">Extensive</option>
+                    </select>
+                </div>
+                
+                <button onclick="assessRisk()">Assess Risk Tolerance</button>
+                <p id="riskResult"></p>
+            
+                <script>
+                    function assessRisk() {
+                        const question1 = document.getElementById("question1").value;
+                        const question2 = document.getElementById("question2").value;
+                        const question3 = document.getElementById("question3").value;
+                        const question4 = document.getElementById("question4").value;
+                        const question5 = document.getElementById("question5").value;
+            
+                        let riskLevel = "Undefined";
+            
+                        document.getElementById("riskResult").innerHTML = "Your risk tolerance: " + riskLevel;
+                    }
+                </script>
+            </section>
+            
+
+            <section id="retirementPlanningTool">
+                <h2>4) Retirement Savings Calculator</h2>
+                    <label for="currentAge">Current Age:</label>
+                    <input type="number" id="currentAge">
+                    <label for="retirementAge">Retirement Age:</label>
+                    <input type="number" id="retirementAge">
+                    <label for="monthlySavings">Monthly Savings ($):</label>
+                    <input type="number" id="monthlySavings">
+                    <button onclick="calculateRetirementSavings()">Calculate</button>
+                    <p id="retirementSavings"></p>
+
+                    <script>
+                        function calculateRetirementSavings() {
+                            const currentAge = parseInt(document.getElementById("currentAge").value);
+                            const retirementAge = parseInt(document.getElementById("retirementAge").value);
+                            const monthlySavings = parseFloat(document.getElementById("monthlySavings").value);
+                            const yearsToRetirement = retirementAge - currentAge;
+                            const totalSavings = monthlySavings * 12 * yearsToRetirement;
+                            document.getElementById("retirementSavings").innerHTML = "Total retirement savings: $" + totalSavings.toFixed(2);
+                        }
+                    </script>
+            </section>
+        </main>
+      </div>
+    <footer>
+        <p>&copy; 2024 WealthHub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

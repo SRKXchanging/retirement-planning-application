@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WealthHub</title>
     <style>
-h1{
+        h1{
     text-align: center;
 }
         @font-face {
@@ -61,6 +61,11 @@ h1{
             border-radius: 5px;
         }
 
+.intro-content h1 {
+            font-size: 46px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
 .filter-container {
     display: flex;
     justify-content: space-around;
@@ -97,31 +102,16 @@ h1{
     max-height: 100px;
 }
 
-.find-out-more-btn {
-    display: block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin-top: 10px; /* Adjust margin-top as needed */
+button {
+    margin-top: 10px;
 }
-
-.find-out-more-btn:hover {
-    background-color: #0056b3;
-}
-
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
 
 
 </style>
@@ -138,77 +128,63 @@ footer {
                 <li><a href="resources.html">Resources</a></li>
             </ul>
         </nav>
-          <h1>Health Programmes</h1>
+          <h1>Retirement Plans</h1>
             <div class="filter-container">
                 <label><input type="checkbox" value="all" id="all-checkbox" checked onclick="toggleAll()"> All</label>
-                <label><input type="checkbox" value="category1" onclick="filterSections()"> Accident</label>
-                <label><input type="checkbox" value="category2" onclick="filterSections()"> Critical Illness</label>
-                <label><input type="checkbox" value="category3" onclick="filterSections()"> Maternity</label>
             </div>
         
-            <div class="section category2">
+            <div class="section category1">
                 <div class="left-column">
                     <img src="Images/comp3.jpg" alt="Logo 1" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>Dementia Caregiver protect</h2>
-                    <p>Get the financial support you need to care for your loved ones.</p>
-                    <button class="find-out-more-btn" onclick="window.location.href = 'fullhealth1.html';">Find out more</button>
+                    <h2>RetireSavvy</h2>
+                    <p>Get up to 20% off 1st year premium. Pay with SRS for extra vouchers</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement1.html';">Find out more</button>
+                </div>
+            </div>
+        
+            <div class="section category2">
+                <div class="left-column">
+                    <img src="Images/comp1.png" alt="Logo 2" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>RetireReady Plus (III)</h2>
+                    <p>Start saving today and enjoy up to 10% first year premium discount.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
                 </div>
             </div>
         
             <div class="section category3">
                 <div class="left-column">
-                    <img src="Images/comp1.png" alt="Logo 2" class="logo">
+                    <img src="Images/comp2.jpg" alt="Logo 3" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>ReadyMummy</h2>
-                    <p>As you welcome your new child, you know you can focus on the joy of your pregnancy journey with ReadyMummy.</p>
-                    <button class="find-out-more-btn" onclick="window.location.href = 'fullhealth2.html';">Find out more</button>
-                </div>
-            </div>
-        
-            <div class="section category1">
-                <div class="left-column">
-                    <img src="Images/comp1.png" alt="Logo 1" class="logo">
-                </div>
-                <div class="right-column">
-                    <h2>ReadyProtect</h2>
-                    <p>5 levels of protection for you and your family, from S$21 a week.</p>
-                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment3.html';">Find out more</button>
-                </div>
-            </div>
-            
-            <div class="section category1">
-                <div class="left-column">
-                    <img src="Images/comp3.jpg" alt="Logo 1" class="logo">
-                </div>
-                <div class="right-column">
-                    <h2>LifeReady Plus (II)</h2>
-                    <p>Get yourself covered at every stage of life.</p>
-                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment3.html';">Find out more</button>
+                    <h2>Gro Retire Flex Pro</h2>
+                    <p>Retire when you want with a stready stream of cash payouts</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
                 </div>
             </div>
     
-            <div class="section category2">
+            <div class="section category4">
                 <div class="left-column">
-                    <img src="Images/comp5.png" alt="Logo 1" class="logo">
+                    <img src="Images/comp7.png" alt="Logo 4" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>GREAT CRITICAL COVER: TOP 3 CIS</h2>
-                    <p>Be protected against the 3 most common critical illnesses.</p>
-                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment4.html';">Find out more</button>
+                    <h2>PRUActive Retirement II</h2>
+                    <p>A highly customisable retirement insurance plan to suit your changing needs, PRUActive Retirement II lets you take charge of your retirement years today.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
                 </div>
             </div>
 
-            <div class="section category2">
+            <div class="section category4">
                 <div class="left-column">
-                    <img src="Images/comp1.png" alt="Logo 1" class="logo">
+                    <img src="Images/comp6.png" alt="Logo 4" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>Manulife CI FlexiCare</h2>
-                    <p>Covers you up to 126 critical illnesses (CI) including early, intermediate and advanced stages.</p>
-                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment4.html';">Find out more</button>
+                    <h2>GREAT Retire Income | Monthly Income Stream</h2>
+                    <p>Safeguard your financial freedom, not just your retirement.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
                 </div>
             </div>
         </body>
@@ -264,7 +240,5 @@ function filterSections() {
         }
     });
 }
-
-
 </script>
 </html>
