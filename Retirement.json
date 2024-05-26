@@ -1,0 +1,57 @@
+{
+
+        "products": [
+            {
+                "ID":1,
+                "name": "RetireReady Plus (III)",
+                "Brand":"ManuLife",
+                "Filter": "Savings",
+                "small_description":"Start saving today and enjoy up to 10% first year premium discount",
+                "Description":"Guaranteed acceptance with no health questions asked for the base plan. Protection for Death and Terminal Illnesses (TI). Waiver of Premium8 on Total and Permanent Disability (TPD) for regular premium policies only",
+                "Amount":"S$200"
+            },
+
+
+            {
+                "ID":2,
+                "name": "RetireSavvy",
+                "Brand":"DBS",
+                "Filter":"Savings",
+                "small_description":"Get up to 20% off 1st year premium. Pay with SRS for extra vouchers",
+                "Description":"Guaranteed acceptance with no health questions asked for the base plan. Protection for Death and Terminal Illnesses (TI). Waiver of Premium8 on Total and Permanent Disability (TPD) for regular premium policies only",
+                "Amount":"S$128.74 monthly"
+            },
+
+            {
+                "ID":3,
+                "name": "Gro Retire Flex Pro",
+                "Brand":"Income SG",
+                "Filter":"Savings",
+                "small_description":"Retire when you want with a stready stream of cash payouts",
+                "Description":"Receive monthly cash payouts consisting of a monthly cash benefit during your payout period and a non-guaranteed cash bonus on top of each monthly cash benefit.",
+                "Amount":"S$140 monthly"
+            },
+
+            {
+                "ID":4,
+                "name": "GREAT Retire Income | Monthly Income Stream",
+                "Brand":"Great Eastern",
+                "small_description":"Safeguard your financial freedom, not just your retirement",
+                "Description":"Monthly stream of cash payouts of up to 5.4X your total premium paid. Flexibility to suit your budget and retirement needs. Additional payouts upon disability",
+                "Amount":"S$150 monthly"
+
+            },
+
+            {
+                "ID":5,
+                "name": "PRUActive Retirement II",
+                "Brand":"Prudential",
+                "small_description":"A highly customisable retirement insurance plan to suit your changing needs, PRUActive Retirement II lets you take charge of your retirement years today.",
+                "Description":"Flexible and customisable premium term and payout period.\n Option of single premium or regular premium term of 4 years up to selected payout age2. Enjoy flexible and adjustable payout period from age 50 for up to 30 years",
+                "Amount":"S$150 monthly"
+
+            }
+
+
+        ]
+}
