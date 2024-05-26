@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WealthHub</title>
+    <style>
+        @font-face {
+            font-family: 'Plantin-Font';
+            src: url('PlantinMTPro-Regular.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Proxima Nova-Font';
+            src: url("ProximaNova-Regular.otf") format('opentype');
+        }
+body {
+    font-family: 'Plantin-Font', 'ProximaNova', serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #3F9093;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    font-size: 50px;
+}
+
+nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            width: 70%;
+        }
+
+        nav ul li {
+            margin-left: 60px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            font-size: 20px;
+        }
+
+        nav ul li a:hover {
+            border-radius: 5px;
+        }
+
+.intro-content h1 {
+            font-size: 46px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+.filter-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.filter-container label {
+    display: flex;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.left-column {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-column {
+    width: 70%;
+}
+
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+
+</style>
+</head>
+    <body>
+        <nav>
+            <div class="logo">WealthHub</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+          <h1>Retirement Plans</h1>
+            <div class="filter-container">
+                <label><input type="checkbox" value="all" id="all-checkbox" checked onclick="toggleAll()"> All</label>
+            </div>
+        
+            <div class="section category1">
+                <div class="left-column">
+                    <img src="Images/comp3.jpg" alt="Logo 1" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>RetireSavvy</h2>
+                    <p>Get up to 20% off 1st year premium. Pay with SRS for extra vouchers</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement1.html';">Find out more</button>
+                </div>
+            </div>
+        
+            <div class="section category2">
+                <div class="left-column">
+                    <img src="Images/comp1.png" alt="Logo 2" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>RetireReady Plus (III)</h2>
+                    <p>Start saving today and enjoy up to 10% first year premium discount.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
+                </div>
+            </div>
+        
+            <div class="section category3">
+                <div class="left-column">
+                    <img src="Images/comp2.jpg" alt="Logo 3" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>Gro Retire Flex Pro</h2>
+                    <p>Retire when you want with a stready stream of cash payouts</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
+                </div>
+            </div>
+    
+            <div class="section category4">
+                <div class="left-column">
+                    <img src="Images/comp7.png" alt="Logo 4" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>PRUActive Retirement II</h2>
+                    <p>A highly customisable retirement insurance plan to suit your changing needs, PRUActive Retirement II lets you take charge of your retirement years today.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
+                </div>
+            </div>
+
+            <div class="section category4">
+                <div class="left-column">
+                    <img src="Images/comp6.png" alt="Logo 4" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>GREAT Retire Income | Monthly Income Stream</h2>
+                    <p>Safeguard your financial freedom, not just your retirement.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
+                </div>
+            </div>
+        </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Retrieve the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Populate the data on the page
+        document.getElementById('name').textContent = urlParams.get('name');
+        document.getElementById('email').textContent = urlParams.get('email');
+        document.getElementById('age').textContent = urlParams.get('age');
+    });
+    function toggleAll() {
+    var allCheckbox = document.getElementById('all-checkbox');
+    var checkboxes = document.querySelectorAll('.filter-container input[type="checkbox"]:not(#all-checkbox)');
+
+    if (allCheckbox.checked) {
+        checkboxes.forEach(function(checkbox) {
+            checkbox.checked = false;
+        });
+    }
+
+    filterSections();
+}
+
+function filterSections() {
+    var allCheckbox = document.getElementById('all-checkbox');
+    var checkboxes = document.querySelectorAll('.filter-container input[type="checkbox"]:not(#all-checkbox)');
+    var sections = document.querySelectorAll('.section');
+    var selectedCategories = [];
+
+    checkboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+            selectedCategories.push(checkbox.value);
+        }
+    });
+
+    if (selectedCategories.length === 0) {
+        allCheckbox.checked = true;
+    } else {
+        allCheckbox.checked = false;
+    }
+
+    sections.forEach(function(section) {
+        if (allCheckbox.checked || selectedCategories.some(category => section.classList.contains(category))) {
+            section.style.display = 'flex';
+        } else {
+            section.style.display = 'none';
+        }
+    });
+}
+</script>
+</html>
