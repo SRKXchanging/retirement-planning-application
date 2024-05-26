@@ -5,53 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WealthHub</title>
     <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 h1{
     text-align: center;
 }
+        @font-face {
+            font-family: 'Plantin-Font';
+            src: url('PlantinMTPro-Regular.otf') format('opentype');
+        }
 
-nav {
-    background-color: #3F9093;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-}
+        @font-face {
+            font-family: 'Proxima Nova-Font';
+            src: url("ProximaNova-Regular.otf") format('opentype');
+        }
 
-nav .logo{
-    font-size: 50px;
-}
+        body {
+            font-family: 'Plantin-Font', 'ProximaNova', serif;
+            margin: 0;
+            padding: 0;
+        }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    align-items: center; /* Center-align items vertically */
-    margin: 0;
-    padding: 0;
-    width: 70%; /* Adjust the width as needed */
-}
+        nav {
+            background-color: #3F9093;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
 
+        nav .logo {
+            font-size: 50px;
+        }
 
-nav ul li {
-    margin-left: 60px;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            width: 70%;
+        }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-}
+        nav ul li {
+            margin-left: 60px;
+        }
 
-nav ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            font-size: 20px;
+        }
+
+        nav ul li a:hover {
+            border-radius: 5px;
+        }
 
 .filter-container {
     display: flex;
@@ -124,9 +132,9 @@ footer {
                 <img src="Images/logo.png" alt="Company Logo" style="max-width: 200px; max-height: 200px;">
             </div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#tools">Tools</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="tools.html">Tools</a></li>
                 <li><a href="resources.html">Resources</a></li>
             </ul>
         </nav>
@@ -204,6 +212,9 @@ footer {
                 </div>
             </div>
         </body>
+        <footer>
+            <p>&copy; 2024 WealthHub. All rights reserved.</p>
+    </footer>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         // Retrieve the URL parameters
@@ -253,5 +264,7 @@ function filterSections() {
         }
     });
 }
+
+
 </script>
 </html>

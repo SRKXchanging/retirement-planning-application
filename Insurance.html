@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WealthHub</title>
     <style>
+        
         h1{
     text-align: center;
 }
@@ -61,11 +62,6 @@
             border-radius: 5px;
         }
 
-.intro-content h1 {
-            font-size: 46px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
 .filter-container {
     display: flex;
     justify-content: space-around;
@@ -102,16 +98,31 @@
     max-height: 100px;
 }
 
-button {
-    margin-top: 10px;
+.find-out-more-btn {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust margin-top as needed */
 }
 
+.find-out-more-btn:hover {
+    background-color: #0056b3;
+}
+
+
 footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
 
 
 </style>
@@ -128,19 +139,22 @@ footer {
                 <li><a href="resources.html">Resources</a></li>
             </ul>
         </nav>
-          <h1>Retirement Plans</h1>
+          <h1>Insurance Plans</h1>
             <div class="filter-container">
                 <label><input type="checkbox" value="all" id="all-checkbox" checked onclick="toggleAll()"> All</label>
+                <label><input type="checkbox" value="category1" onclick="filterSections()"> Travel</label>
+                <label><input type="checkbox" value="category2" onclick="filterSections()"> Endowment</label>
+                <label><input type="checkbox" value="category3" onclick="filterSections()"> Home</label>
             </div>
         
             <div class="section category1">
                 <div class="left-column">
-                    <img src="Images/comp3.jpg" alt="Logo 1" class="logo">
+                    <img src="Images/comp3.png" alt="Logo 1" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>RetireSavvy</h2>
-                    <p>Get up to 20% off 1st year premium. Pay with SRS for extra vouchers</p>
-                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement1.html';">Find out more</button>
+                    <h2>TravellerShield Plus</h2>
+                    <p>Protect your vacation, earn cashback and stand to win a branded suitcase.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinsurance1.html';">Find out more</button>
                 </div>
             </div>
         
@@ -149,42 +163,53 @@ footer {
                     <img src="Images/comp1.png" alt="Logo 2" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>RetireReady Plus (III)</h2>
-                    <p>Start saving today and enjoy up to 10% first year premium discount.</p>
-                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
+                    <h2>Manulife IncomeGen (II)</h2>
+                    <p>Provides you a stream of monthly income up to age 120.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinsurance2.html';">Find out more</button>
                 </div>
             </div>
         
-            <div class="section category3">
+            <div class="section category1">
                 <div class="left-column">
-                    <img src="Images/comp2.jpg" alt="Logo 3" class="logo">
+                    <img src="Images/comp3.jpg" alt="Logo 1" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>Gro Retire Flex Pro</h2>
-                    <p>Retire when you want with a stready stream of cash payouts</p>
-                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
+                    <h2>Overseas Student Protect</h2>
+                    <p>Overseas Student Protect. No matter how far you are away from home, stay protected.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment3.html';">Find out more</button>
+                </div>
+            </div>
+            
+            <div class="section category2">
+                <div class="left-column">
+                    <img src="Images/comp3.jpg" alt="Logo 1" class="logo">
+                </div>
+                <div class="right-column">
+                    <h2>ReadyBuilder (II)</h2>
+                    <p>A life plan to support your financial goals amid life’s changes.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment3.html';">Find out more</button>
                 </div>
             </div>
     
-            <div class="section category4">
+            <div class="section category3">
                 <div class="left-column">
-                    <img src="Images/comp7.png" alt="Logo 4" class="logo">
+                    <img src="Images/comp3.jpg" alt="Logo 1" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>PRUActive Retirement II</h2>
-                    <p>A highly customisable retirement insurance plan to suit your changing needs, PRUActive Retirement II lets you take charge of your retirement years today.</p>
-                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
+                    <h2>myHome Protect II</h2>
+                    <p>Protect your home against the unexpected with up to S$350,000 coverage.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment4.html';">Find out more</button>
                 </div>
             </div>
 
-            <div class="section category4">
+            <div class="section category3">
                 <div class="left-column">
-                    <img src="Images/comp6.png" alt="Logo 4" class="logo">
+                    <img src="Images/comp5.png" alt="Logo 1" class="logo">
                 </div>
                 <div class="right-column">
-                    <h2>GREAT Retire Income | Monthly Income Stream</h2>
-                    <p>Safeguard your financial freedom, not just your retirement.</p>
-                    <button class="find-out-more-btn" onclick="window.location.href = 'fullretirement2.html';">Find out more</button>
+                    <h2>GreatHome</h2>
+                    <p>Insure the assets and contents in your home.</p>
+                    <button class="find-out-more-btn" onclick="window.location.href = 'fullinvestment4.html';">Find out more</button>
                 </div>
             </div>
         </body>
